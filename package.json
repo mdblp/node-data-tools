@@ -1,6 +1,6 @@
 {
   "name": "@tidepool/data-tools",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Export data from the Tidepool API to various file formats",
   "repository": "https://github.com/tidepool-org/data-analytics.git",
   "author": "Lennart Goedhart <lennart@tidepool.org>",
@@ -12,7 +12,7 @@
   },
   "scripts": {
     "lint": "eslint --cache --format=node_modules/eslint-formatter-pretty .",
-    "lint-fix": "yarn run lint -- --fix",
+    "lint-fix": "npm run lint -- --fix",
     "test": "node -r esm ./test/runTests.js"
   },
   "dependencies": {
@@ -23,8 +23,8 @@
     "event-stream": "3.3.4",
     "exceljs": "1.11.0",
     "flat": "4.1.0",
-    "lodash": "4.17.15",
-    "mkdirp": "0.5.1",
+    "lodash": "^4.17.20",
+    "mkdirp": "^0.5.1",
     "moment": "2.24.0"
   },
   "devDependencies": {
@@ -38,5 +38,8 @@
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-react": "7.14.3",
     "json-diff": "0.5.4"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.ci.diabeloop.eu/repository/your-loops-npm/"
   }
 }

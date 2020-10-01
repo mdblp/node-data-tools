@@ -3,22 +3,11 @@ sudo: false
 language: node_js
 
 node_js:
-  - 10.14.2
-  - node
-
-cache: yarn
-
-before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.9.4
-  - export PATH="$HOME/.yarn/bin:$PATH"
+  - 10
 
 install:
-  - yarn install --frozen-lockfile
+  - npm install
 
 script:
-  - yarn run lint
-  - yarn test
-
-matrix:
-  allow_failures:
-    - node_js: node
+  - npm run lint
+  - npm run test
