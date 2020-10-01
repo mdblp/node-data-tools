@@ -1,6 +1,6 @@
 {
   "name": "@tidepool/data-tools",
-  "version": "2.2.1-rc1",
+  "version": "2.2.1",
   "description": "Export data from the Tidepool API to various file formats",
   "repository": "https://github.com/tidepool-org/data-analytics.git",
   "author": "Lennart Goedhart <lennart@tidepool.org>",
@@ -40,6 +40,6 @@
     "json-diff": "0.5.4"
   },
   "publishConfig": {
-    "registry": "https://nexus.ci.diabeloop.eu/repository/npm-diabeloop/"
+    "registry": "https://nexus.ci.diabeloop.eu/repository/your-loops-npm/"
   }
 }
